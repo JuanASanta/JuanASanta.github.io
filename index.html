@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juan Antonio Santa — Portfolio</title>
+<meta name="description" content="Portfolio de Juan Antonio Santa, desarrollador junior en QA Automation, Backend y QA Manual.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <span class="topbar__brand">portfolio.spec.js</span>
+  <span class="topbar__status" id="runner-status">
+    <span class="dot" id="runner-dot"></span>
+    <span id="runner-text">iniciando…</span>
+  </span>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow">TEST_SUITE // PORTFOLIO.SPEC</p>
+    <h1 class="hero__name">Juan Antonio Santa</h1>
+    <p class="hero__role">QA Automation · Backend · QA Manual</p>
+    <p class="hero__desc">
+      Junior en busca de su primer puesto en desarrollo. Este portfolio está
+      montado como una suite de pruebas: cada proyecto es un caso, y cada
+      caso tiene una afirmación que se puede comprobar.
+    </p>
+    <div class="hero__links">
+      <a href="mailto:sleonjuanantonio@gmail.com" class="btn btn--primary">Escríbeme</a>
+      <a href="https://github.com/JuanASanta" class="btn btn--ghost">GitHub</a>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section class="suites" id="proyectos">
+    <h2 class="section-title">describe('experiencia práctica')</h2>
+
+    <!-- SUITE 1: QA AUTOMATION
+    <article class="suite" data-suite>
+      <div class="suite__head">
+        <span class="suite__index">01</span>
+        <h3 class="suite__title">QA Automation</h3>
+        <span class="suite__badge" data-badge>PASS</span>
+      </div>
+
+      <div class="case">
+        <p class="case__it">it('automatiza el testing de una API real')</p>
+        <h4 class="case__name">Suite de tests para Ledger</h4>
+        <p class="case__desc">
+          Batería de tests automatizados (endpoints, autenticación, casos
+          límite) sobre la API de gastos personales Ledger. Pensada para
+          correr en CI en cada commit.
+        </p>
+        <ul class="case__stack">
+          <li>Pytest</li>
+          <li>Requests</li>
+          <li>GitHub Actions</li>
+        </ul>
+        <div class="case__links">
+          <a href="#" class="link">Código →</a>
+          <a href="#" class="link">Informe de cobertura →</a>
+        </div>
+      </div>
+    </article> -->
+
+    <!-- SUITE 2: BACKEND -->
+    <article class="suite" data-suite>
+      <div class="suite__head">
+        <span class="suite__index">02</span>
+        <h3 class="suite__title">Backend</h3>
+        <span class="suite__badge" data-badge>PASS</span>
+      </div>
+
+      <div class="case">
+        <p class="case__it">it('expone una API REST mantenible')</p>
+        <h4 class="case__name">Ledger</h4>
+        <p class="case__desc">
+          API REST para gestión de gastos personales. Autenticación,
+          categorías, informes mensuales. Construida para servir de base a
+          la suite de tests automatizados de arriba.
+        </p>
+        <ul class="case__stack">
+          <li>Django</li>
+          <li>Django REST Framework</li>
+          <li>PostgreSQL</li>
+        </ul>
+        <div class="case__links">
+          <a href="https://ledger-api-smyq.onrender.com/" class="link">Código →</a>
+          <a href="#" class="link">Documentación de la API →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- SUITE 3: QA MANUAL
+    <article class="suite" data-suite>
+      <div class="suite__head">
+        <span class="suite__index">03</span>
+        <h3 class="suite__title">QA Manual</h3>
+        <span class="suite__badge" data-badge>PASS</span>
+      </div>
+
+      <div class="case">
+        <p class="case__it">it('documenta lo que el código no dice')</p>
+        <h4 class="case__name">Plan de pruebas y reporte de bugs</h4>
+        <p class="case__desc">
+          Plan de pruebas exploratorias y funcionales sobre [proyecto],
+          con casos de prueba documentados, prioridad y severidad, y
+          reporte de incidencias reproducible.
+        </p>
+        <ul class="case__stack">
+          <li>Casos de prueba</li>
+          <li>Bug tracking</li>
+          <li>Testing exploratorio</li>
+        </ul>
+        <div class="case__links">
+          <a href="#" class="link">Ver plan de pruebas →</a>
+        </div>
+      </div>
+    </article> -->
+
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="about">
+    <h2 class="section-title">describe('perfil')</h2>
+    <p class="about__text">
+      Técnico en Desarrollo de Aplicaciones Web. Actualmente empiezo el
+      grado de Ingeniería Informática, combinando el estudio con la
+      búsqueda de mi primer puesto junior en QA Automation. Me interesa
+      especialmente la parte de automatizar pruebas y asegurar la calidad
+      del software antes de que llegue a producción.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills">
+    <h2 class="section-title">describe('stack')</h2>
+    <div class="skills__grid">
+      <div class="skills__group">
+        <p class="skills__label">Testing</p>
+        <ul>
+          <li>Pytest</li>
+          <li>Selenium / Playwright</li>
+          <li>Casos de prueba</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <p class="skills__label">Backend</p>
+        <ul>
+          <li>Python</li>
+          <li>Django / DRF</li>
+          <li>PostgreSQL</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <p class="skills__label">Herramientas</p>
+        <ul>
+          <li>Git</li>
+          <li>Docker</li>
+          <li>Postman</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <h2 class="section-title">describe('contacto')</h2>
+    <p class="contact__text">
+      Disponible para puestos junior de QA Automation. Abierto también a
+      backend.
+    </p>
+    <div class="contact__links">
+      <a href="mailto:sleonjuanantonio@gmail.com" class="link">sleonjuanantonio@gmail.com</a>
+      <a href="https://github.com/JuanASanta" class="link">GitHub</a>
+      <a href="https://www.linkedin.com/in/juanansantaleon" class="link">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span id="footer-summary">ejecutando…</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
